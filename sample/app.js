@@ -36,4 +36,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// database config
+var db = require('./db');
+db.init();
+
 module.exports = app;
