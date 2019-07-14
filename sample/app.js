@@ -38,6 +38,6 @@ app.use(function(err, req, res, next) {
 
 // database config
 var db = require('./db');
-db.init();
+db.init(app);
 
 module.exports = app;

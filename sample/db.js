@@ -8,7 +8,7 @@ module.exports.init = function(app) {
       database: process.env.DATABASE_NAME,
       password: process.env.DATABASE_PASS,
       port: 5432,
-    }));
+    });
     app.set('db', pool);
 }
 
