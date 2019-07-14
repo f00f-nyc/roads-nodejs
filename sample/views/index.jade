@@ -13,6 +13,8 @@ block content
                         #menu.body(style="text-decoration: none; color: black;")
                             a.header-menu(href="#top") Home
                               | &nbsp
+                            a.header-menu(href="#gogs") Gogs
+                              | &nbsp
                             a.header-menu(href="#jenkins") Jenkins
                               | &nbsp;
                             a.header-menu(href="#postgres") Postgres
@@ -30,6 +32,20 @@ block content
                 #welcome3(style="width: 10%; margin: 0 auto;")
                     br
                     a.button(href="#site-header") Back to the top
+        section#gogs
+            .section-feature
+                #gogs(style="top: 100px; width: 10%; margin: 0 auto;")
+                    a(href="#site-header") 
+                        img(src="/images/gogs.jpg" style="width: 100%")
+                #gogs2
+                    h1(style="text-align: center; font-weight: lighter; font-size: 500%; letter-spacing: 2px; font-family: Verdana; Helvetica, Arial, sans-serif;") GOGS
+                    h3(style="text-align: center; font-weight: lighter; font-family: Verdana; Helvetica; Arial; sans-serif;") A painless self-hosted Git service
+                #gogs3(style="width: 40%; margin: 0 auto; ")
+                    br
+                    br
+                    p(style="text-align: center") Your Roads set up came with a self-hosted git service <a href="gogs">here</a>, and this sample app has been deployed to it. This is a private repository and is linked to your your <a href="#jenkins">Jenkins</a> install, any changes you push to this repository will automatically be deployed to your server in the cloud.
+                    br
+                    a.button(href="https://gogs.io/") Learn More 
         section#jenkins
             .section-feature
                 #jenkins1(style="top: 100px; width: 10%; margin: 0 auto;")
@@ -41,8 +57,7 @@ block content
                 #jenkins3(style="width: 40%; margin: 0 auto; ")
                     br
                     br
-                    p(style="text-align: center") Your Roads set up came with an automation service <a href="jenkins">here</a>. Jenkins is the most feature rich of the open-source automation software available, and can be used all of the non-human parts of software development. You can trigger builds from source control checkins, or on a schedule, or by accessing specific URLs, or just logging in and running a job manually. For more information, a good place to start is the <a href="https://jenkins.io/doc/pipeline/tour/getting-started/">getting started guide</a>.
-                #jenkins4(style="width: 10%; margin: 0 auto;")
+                    p(style="text-align: center") Your Roads set up came with an automation service <a href="jenkins">here</a>. Because you also installed Gogs, Jenkins is configured to deploy whenever any changes to that repository are detected. That means that you can clone the project locally, modify it, and then push your changes up and have them reflected on your website automatically. If you're new to Jenkins and automation, you don't need to worry about the daunting task of making it all work, for now. Just try experimenting with your own Jenkins install, or the <a href="https://jenkins.io/doc/pipeline/tour/getting-started/">getting started guide</a>.
                     br
                     a.button(href="https://jenkins.io/") Learn More                    
         section#postgres
